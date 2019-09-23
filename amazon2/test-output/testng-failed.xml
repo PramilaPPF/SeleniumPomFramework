@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="port_" value="4725"/>
+  <parameter name="platformVersion_" value="9"/>
+  <parameter name="UDID_" value="emulator-5554"/>
+  <parameter name="ip_" value="127.0.0.1"/>
+  <parameter name="waitInSecs_" value="10"/>
+  <parameter name="deviceName_" value="emulator-5554"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="port_" value="4725"/>
+    <parameter name="platformVersion_" value="9"/>
+    <parameter name="UDID_" value="emulator-5554"/>
+    <parameter name="ip_" value="127.0.0.1"/>
+    <parameter name="waitInSecs_" value="10"/>
+    <parameter name="deviceName_" value="emulator-5554"/>
+    <classes>
+      <class name="com.qa.amazon.tests.VerifyKindleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyKindleTest"/>
+        </methods>
+      </class> <!-- com.qa.amazon.tests.VerifyKindleTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

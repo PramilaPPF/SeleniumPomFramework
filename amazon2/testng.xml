@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests" thread-count="2" >
+	<test name="Test1" >	
+	 <parameter name="deviceName_" value="emulator-5554" />
+	 <parameter name="UDID_" value="emulator-5554" />
+	 <parameter name="platformVersion_" value="9" />
+	 <parameter name="ip_" value="127.0.0.1" />	
+	 <parameter name="port_" value="4725" />
+	 <parameter name="waitInSecs_" value="10" />	
+		<classes>	   
+		     <class name="com.qa.amazon.tests.VerifyKindleTest" />  		    			 				
+		</classes>
+	 </test>  
+	 <test name="Test2" >	
+	 <parameter name="deviceName_" value="emulator-5554" />
+	 <parameter name="UDID_" value="emulator-5556" />
+	 <parameter name="platformVersion_" value="9" />
+	 <parameter name="ip_" value="127.0.0.1" />	
+	 <parameter name="port_" value="4727" />	
+	 <parameter name="waitInSecs_" value="10" />	
+		<classes>	   
+		     <class name="com.qa.amazon.tests.VerifyKindleTest" />  		    			 				
+		</classes>
+	 </test>    
+		
+</suite> <!-- Suite -->

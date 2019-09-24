@@ -44,6 +44,7 @@ public class LandingPage extends BasePage {
 	}
 
 	public CategorySelectionPage selectShopByCategory() {
+		Assert.assertEquals(getElementText(shopByCatgory), "Shop");
 		waitAndClick(shopByCatgory);		
 		return getInstance(CategorySelectionPage.class);
 	}

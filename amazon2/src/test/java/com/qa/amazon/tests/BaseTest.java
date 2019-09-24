@@ -44,8 +44,7 @@ public class BaseTest  {
 			 log.info("Error in launching driver");
 		}
 		
-		System.out.println("Android Driver init done");
-		wait=new WebDriverWait(driver,waitInSecs_);
+				wait=new WebDriverWait(driver,waitInSecs_);
 		page = new BasePage(driver, wait);
 	}
 

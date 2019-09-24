@@ -13,7 +13,7 @@ public class VerifyKindleTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void shopByCategoryclickTest() {
-		page.getInstance(LandingPage.class).clickHamburger();
+		page.getInstance(LandingPage.class).clickHamburgerAndVerifyShopByCat();
 		log.info("Hamburger clicked Successfully");
 		Reporter.log("Hamburger button Clicked");
 	}

@@ -38,13 +38,13 @@ public class LandingPage extends BasePage {
 	}
 	
 	
-	public void clickHamburger() {
+	public void clickHamburgerAndVerifyShopByCat() {
 		waitForPageElementPresent(hamburger);
 		waitAndClick(hamburger);
+		Assert.assertEquals(getElementText(shopByCatgory), "Shop");
 	}
 
-	public CategorySelectionPage selectShopByCategory() {
-		Assert.assertEquals(getElementText(shopByCatgory), "Shop");
+	public CategorySelectionPage selectShopByCategory() {		
 		waitAndClick(shopByCatgory);		
 		return getInstance(CategorySelectionPage.class);
 	}
